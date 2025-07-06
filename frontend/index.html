@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film Öneri Sistemi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 Film Öneri Sistemi</h1>
+
+    <div class="section">
+      <h2>🎞️ İzlediğiniz Filmler</h2>
+      <div class="input-group">
+        <input type="text" id="filmSearch" placeholder="Film adı girin...">
+        <button onclick="addMovie()">Ekle</button>
+      </div>
+      <div id="filmSuggestions" class="autocomplete-suggestions"></div>
+      <ul id="selectedMoviesList"></ul>
+    </div>
+
+    <div class="section">
+      <h2>📊 Tahmin Et</h2>
+      <div class="input-group">
+        <input type="text" id="targetFilmSearch" placeholder="Tahmini alınacak film...">
+        <button onclick="predictRating()">Tahmini Göster</button>
+      </div>
+      <div id="targetFilmSuggestions" class="autocomplete-suggestions"></div>
+      <p id="predictionResult"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
