@@ -1,6 +1,6 @@
 flask
 flask-cors
-tensorflow==2.13.0
+tensorflow
 tensorflow-recommenders
 pandas
 
